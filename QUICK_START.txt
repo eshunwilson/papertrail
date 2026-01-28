@@ -1,0 +1,94 @@
+QUICK START GUIDE - PaperTrail
+===============================
+
+STEP 1: INSTALL PYTHON
+-----------------------
+1. Go to: https://www.python.org/downloads/
+2. Download Python 3.8 or higher
+3. During installation, CHECK THE BOX that says "Add Python to PATH"
+4. Complete the installation
+
+Verify Python is installed:
+- Open Terminal (Mac/Linux) or Command Prompt (Windows)
+- Type: python --version
+- You should see something like "Python 3.11.x"
+
+STEP 2: INSTALL DEPENDENCIES
+-----------------------------
+1. Open Terminal/Command Prompt
+2. Navigate to the papertrail folder:
+   - Windows: cd C:\path\to\papertrail
+   - Mac/Linux: cd /path/to/papertrail
+
+3. Install required packages:
+   pip install -r requirements.txt
+
+   If that doesn't work, try:
+   python -m pip install -r requirements.txt
+
+STEP 3: RUN THE APPLICATION
+----------------------------
+In the same Terminal/Command Prompt window, type:
+
+python papertrail.py
+
+A window should open with the PaperTrail interface!
+
+STEP 4: USING THE APP
+----------------------
+Add a Citation from URL:
+1. Paste a URL into the URL field
+2. Click "Fetch & Add"
+3. The app extracts metadata automatically
+
+Add a Citation Manually:
+1. Fill in the Title, Authors, Year, etc.
+2. Click "Add Citation"
+
+Export Your Bibliography:
+1. Choose a citation style (Vancouver, APA, or MLA)
+2. Click "Preview" to see the formatted output
+3. Click "Export to File" to save it
+
+Delete Citations:
+- Select a citation in the list
+- Click "Delete Selected"
+
+OPTIONAL: CREATE STANDALONE EXECUTABLE
+---------------------------------------
+If you want to create a .exe file that doesn't need Python:
+
+1. Install PyInstaller:
+   pip install pyinstaller
+
+2. Create the executable:
+   pyinstaller --onefile --windowed papertrail.py
+
+3. Find your executable in the "dist" folder
+
+TROUBLESHOOTING
+---------------
+Problem: "python is not recognized"
+Solution: Python isn't in your PATH. Reinstall Python and check "Add Python to PATH"
+
+Problem: "pip is not recognized"
+Solution: Try using: python -m pip instead of pip
+
+Problem: Dependencies won't install
+Solution: Make sure you have internet connection and try:
+          python -m pip install requests beautifulsoup4
+
+Problem: Can't fetch metadata from URL
+Solution: Some sites block automated requests. Use manual entry instead.
+
+NEED HELP?
+----------
+- Read the full README.md for more detailed information
+- Check if Python is installed: python --version
+- Check if pip works: pip --version
+- Make sure you're in the correct folder when running commands
+
+DATA LOCATION
+-------------
+Your citations are stored in a file called "citations.db" in the same folder
+as the application. This file is created automatically when you first run the app.
