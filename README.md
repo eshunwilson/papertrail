@@ -1,5 +1,5 @@
-# PaperTrail <img width="175" height="165" alt="Screenshot 2026-02-03 at 18 32 59" src="https://github.com/user-attachments/assets/af54be48-0a6d-4e20-8e9e-461400d42b32" />
-
+<img width="175" height="165" alt="Screenshot 2026-02-03 at 18 32 59" src="https://github.com/user-attachments/assets/af54be48-0a6d-4e20-8e9e-461400d42b32" />
+# PaperTrail
 
 A desktop citation management application that helps you organize and format academic references in multiple citation styles (Vancouver, APA, MLA).
 
